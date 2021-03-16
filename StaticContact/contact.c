@@ -131,3 +131,8 @@ void SortByName(Contact* pc)
 {
 	qsort(pc->data, pc->size, sizeof(PeoInfo), compare);
 }
+//Çå¿ÕÍ¨Ñ¶Â¼
+void Clear(Contact* pc)
+{
+	memset(pc->data, 0, sizeof(PeoInfo)*pc->size);
+}

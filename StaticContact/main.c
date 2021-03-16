@@ -10,7 +10,8 @@ enum Option
 	MODIFY,
 	SEARCH,
 	SHOW,
-	SORT
+	SORT,
+	CLEAR
 };
 
 void menu()
@@ -18,7 +19,7 @@ void menu()
 	printf("***1.add              2.delete***\n");
 	printf("***3.modify           4.search***\n");
 	printf("***5.show             6.sort  ***\n");
-	printf("*********************************\n");
+	printf("***7.clear                    ***\n");
 	printf("***         0.exit            ***\n");
 }
 
@@ -53,6 +54,8 @@ int main()
 		case SORT:
 			SortByName(&con);
 			break;
+		case CLEAR:
+			Clear(&con);
 		}
 	} while (input);
 

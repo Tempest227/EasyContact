@@ -30,7 +30,7 @@ void InitContact(Contact* pc);
 void AddContact(Contact* pc);
 //显示通讯录
 void ShowContact(Contact* pc);
-//删除通讯录
+//删除通讯录指定成员
 void DeleteContact(Contact* pc);
 //修改通讯录
 void ModifyContact(Contact* pc);
@@ -38,3 +38,5 @@ void ModifyContact(Contact* pc);
 void SearchContact(Contact* pc);
 //按姓名排序
 void SortByName(Contact* pc);
+//清空通讯录
+void Clear(Contact* pc);
